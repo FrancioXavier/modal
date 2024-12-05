@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal ao Carregar a Página</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="custom.css" />
+  </head>
+  <body>
+    <!-- Modal -->
+    <div
+      id="myModal"
+      class="modal fade screen-container"
+      tabindex="-1"
+      role="dialog"
+    >
+      <div class="modal-dialog modal-container" role="document">
+        <div class="modal-content">
+          <div class="modal-header" style="border: none">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+              style="margin: 1rem 1rem 0 0"
+            >
+              <span aria-hidden="true"
+                ><img src="./public/images/x-close.png" style="width: 24px; height: auto;" alt=""
+              /></span>
+            </button>
+            <div class="icon-container">
+              <div class="check-circle">
+                <img
+                  src="./public/images/check-circle.png"
+                  class="check-img"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="modal-body content-text" style="border: none">
+            <h3 class="modal-title">Cadastro confirmado!</h3>
+            <div class="text-container">
+              <p>Tudo pronto! Escolha o curso desejado</p>
+              <p>e comece a estudar agora mesmo. 🚀📚</p>
+            </div>
+          </div>
+          <div class="modal-footer button-div" style="border: none">
+            <button type="button" class="confirm-button" data-dismiss="modal">
+              Escolher um curso
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Conteúdo principal -->
+    <div class="container">
+      <h1>Exemplo com Modal</h1>
+      <p>Recarregue a página para ver o modal.</p>
+    </div>
+
+    <!-- Bootstrap JS e dependências -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Script para ativar o modal -->
+    <script>
+      $(document).ready(function () {
+        // Abre o modal automaticamente ao carregar a página
+        $("#myModal").modal("show");
+      });
+    </script>
+  </body>
+</html>
