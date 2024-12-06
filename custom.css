@@ -25,18 +25,22 @@ body {
     justify-content: center;
 }
 
+.modal-header {
+    padding-bottom: 0;
+}
+
 .modal-title {
     color: var(--colors-text-text-primary-900, #101828);
     margin-bottom: 1rem;
     font-weight: 600;
     font-size: var(--Font-size-text-lg, 20px);
     text-align: center;
-    
+    line-height: 28px;
 }
 
 .check-circle {
-    width: 72px;
-    height: 72px;
+    width: 48px;
+    height: 48px;
     border-radius: 999px;
     background-color: #DCFAE6;
     display: flex;
@@ -46,7 +50,10 @@ body {
 
 .modal-container {
     width: 400px; 
-    border-radius: 16px
+    border-radius: 16px;
+    box-shadow: 
+    0px 20px 24px -4px rgba(16, 24, 40, 0.08), 
+    0px 8px 8px -4px rgba(16, 24, 40, 0.03);
 }
 
 .icon-container {
@@ -56,8 +63,8 @@ body {
 }
 
 .check-img {
-    width: 36px;
-    height: 36px;
+    width: 24px;
+    height: 24px;
 }
 
 .content-text {
@@ -66,6 +73,7 @@ body {
     align-items: center;
     display: flex;
     flex-direction: column;
+    padding: 16px;
 }
 
 .text-container p{
@@ -74,6 +82,7 @@ body {
     width: 100%;
     text-align: center;
     margin: 0;
+    line-height: 20px;
 }
 
 .text-container {
@@ -122,5 +131,9 @@ body {
 
     .text-container p {
         width: 100%;
+    }
+
+    .button-div {
+        padding-top: 8px;
     }
 }
