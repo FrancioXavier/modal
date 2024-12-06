@@ -1,45 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Modal ao Carregar a Página</title>
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="custom.css" />
-  </head>
-  <body>
-    <!-- Modal -->
-    <div
-      id="myModal"
-      class="modal fade screen-container"
-      tabindex="-1"
-      role="dialog"
-    >
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modal ao Carregar a Página</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="custom.css" />
+</head>
+
+<body>
+
+  <!-- Conteúdo principal -->
+  <div class="container">
+    <h1>Exemplo com Modal</h1>
+    <p>Recarregue a página para ver o modal.</p>
+
+
+    <div class="container">
+      <button id="btn1" class="btn btn-primary">Abrir Modal 1</button>
+      <button id="btn2" class="btn btn-success">Abrir Modal 2</button>
+      <button id="btn3" class="btn btn-info">Abrir Modal 3</button>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="myModal" class="modal fade" role="dialog">
+    <div class="screen-container">
       <div class="modal-dialog modal-container" role="document">
         <div class="modal-content">
           <div class="modal-header" style="border: none">
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-              style="margin: 1rem 1rem 0 0"
-            >
-              <span aria-hidden="true"
-                ><img src="./public/images/x-close.png" style="width: 24px; height: auto;" alt=""
-              /></span>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin: 1rem 1rem 0 0">
+              <span aria-hidden="true"><img src="./public/images/x-close.png" style="width: 24px; height: auto;"
+                  alt="" /></span>
             </button>
             <div class="icon-container">
               <div class="check-circle">
-                <img
-                  src="./public/images/check-circle.png"
-                  class="check-img"
-                  alt=""
-                />
+                <img src="./public/images/check-circle.png" class="check-img" alt="" />
               </div>
             </div>
           </div>
@@ -58,23 +56,94 @@
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Conteúdo principal -->
-    <div class="container">
-      <h1>Exemplo com Modal</h1>
-      <p>Recarregue a página para ver o modal.</p>
+  <div id="myModalSub" class="modal fade" role="dialog">
+    <div class="screen-container">
+      <div class="modal-dialog modal-container" role="document">
+        <div class="modal-content">
+          <div class="modal-header" style="border: none">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin: 1rem 1rem 0 0">
+              <span aria-hidden="true"><img src="./public/images/x-close.png" style="width: 24px; height: auto;"
+                  alt="" /></span>
+            </button>
+            <div class="icon-container">
+              <div class="check-circle">
+                <img src="./public/images/check-circle.png" class="check-img" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="modal-body content-text" style="border: none">
+            <h3 class="modal-title">Inscrição realizada com sucesso!</h3>
+            <div class="text-container">
+              <p>Parabéns! Agora você tem acesso completo a todos os materiais e conteúdos das aulas. Aproveite e bons
+                estudos! 🎓✨</p>
+            </div>
+          </div>
+          <div class="modal-footer button-div" style="border: none">
+            <button type="button" class="confirm-button" data-dismiss="modal">
+              Acessar material
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 
-    <!-- Bootstrap JS e dependências -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <div id="myModalSubReg" class="modal fade" role="dialog">
+    <div class="screen-container">
+      <div class="modal-dialog modal-container" role="document">
+        <div class="modal-content">
+          <div class="modal-header" style="border: none">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin: 1rem 1rem 0 0">
+              <span aria-hidden="true"><img src="./public/images/x-close.png" style="width: 24px; height: auto;"
+                  alt="" /></span>
+            </button>
+            <div class="icon-container">
+              <div class="check-circle">
+                <img src="./public/images/check-circle.png" class="check-img" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="modal-body content-text" style="border: none">
+            <h3 class="modal-title">Tudo pronto! 🎉</h3>
+            <div class="text-container">
+              <p style="padding-bottom: 2rem;">Parabéns! Seu cadastro foi realizado com sucesso, e sua inscrição foi
+                concluída. Agora você tem acesso
+                completo a todos os materiais e conteúdos das aulas.</p>
+              <p> Aproveite essa jornada de aprendizado e bons estudos! 🚀📚</p>
+            </div>
+          </div>
+          <div class="modal-footer button-div" style="border: none">
+            <button type="button" class="confirm-button" data-dismiss="modal">
+              Acessar meu curso
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <!-- Script para ativar o modal -->
-    <script>
-      $(document).ready(function () {
-        // Abre o modal automaticamente ao carregar a página
-        $("#myModal").modal("show");
-      });
-    </script>
-  </body>
+  <!-- Bootstrap JS e dependências -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <!-- Script para ativar o modal -->
+  <script>
+    // jQuery para abrir modais ao clicar nos botões
+
+    document.getElementById("btn1").addEventListener("click", () => {
+      $('#myModal').modal('show');
+    });
+
+    $('#btn2').click(function () {
+      $('#myModalSub').modal('show');
+    });
+
+    $('#btn3').click(function () {
+      $('#myModalSubReg').modal('show');
+    });
+  </script>
+</body>
+
 </html>
