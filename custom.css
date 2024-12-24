@@ -1,4 +1,7 @@
-
+.cpfInput {
+    border-radius: 5px;
+    border: 2px solid #cdcdcd;
+}
 body {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
@@ -135,5 +138,58 @@ body {
 
     .button-div {
         padding-top: 8px;
+    }
+}
+.inputAddressForm {
+    border-radius: 8px;
+    border: 1px solid #D0D5DD;
+    background: #FFF;
+    height: 35px;
+    width: 100%;
+}
+
+.inputAddressText {
+    color: #344054;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 19.6px */
+    /* margin-left: 1rem; */
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    /* Remove os botões em navegadores Firefox */
+    input[type="number"] {
+      -moz-appearance: textfield;
+    }
+
+.inputsContainer {
+    display: flex; 
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.text-container {
+    padding-right: 2rem;
+}
+@media only screen and (max-width: 500px) {
+    .inputsContainer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0;
+    }
+
+    .inputAddressText {
+        margin-top: 1.5rem;
+    }
+
+    .inputAddressForm {
+        width: 100%;
     }
 }

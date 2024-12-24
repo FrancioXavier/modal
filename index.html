@@ -28,29 +28,62 @@
   <!-- Modal -->
   <div id="myModal" class="modal fade" role="dialog">
     <div class="screen-container">
-      <div class="modal-dialog modal-container" role="document">
+      <div class="modal-dialog modal-container" role="document" style="width: 80vw; max-width: 500px; border-radius: 8px;
+      background: #FFF;
+      box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.10) inset, 0px 8px 40px 0px rgba(0, 0, 0, 0.25);">
         <div class="modal-content">
           <div class="modal-header" style="border: none">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin: 1rem 1rem 0 0">
               <span aria-hidden="true"><img src="./public/images/x-close.png" style="width: 24px; height: auto;"
                   alt="" /></span>
             </button>
-            <div class="icon-container">
-              <div class="check-circle">
-                <img src="./public/images/check-circle.png" class="check-img" alt="" />
+          </div>
+          <div class="modal-body content-text" style="border: none">
+            <h3 class="modal-title">Vamos confirmar sua identidade</h3>
+            <div class="inputsContainer">
+              <div class="text-container" style="align-items: start;">
+                <label for="telCelular" class="inputAddressText">Celular:</label>
+                <input type="number" placeholder="Ex: (11) 98131-2656" id="celInput" name="telCelular" class="inputAddressForm">
+              </div>
+              <div class="text-container" style="align-items: start;">
+                <label for="cpf" class="inputAddressText">CPF:</label>
+                <input type="number" placeholder="000.000.000-00" id="cpfInput" name="cpf" class="inputAddressForm">
+              </div>
+            </div>
+            <div class="inputsContainer">
+              <div class="text-container" style="align-items: start;">
+                <label for="addressName" class="inputAddressText">Endereço:</label>
+                <input type="number" placeholder="Ex: Rua da alegria" id="addressInput" name="addressName" class="inputAddressForm">
+              </div>
+              <div class="text-container" style="align-items: start;">
+                <label for="cep" class="inputAddressText">CEP:</label>
+                <input type="number" placeholder="00000-000" id="cepInput" name="cep" class="inputAddressForm">
+              </div>
+            </div>
+            <div class="inputsContainer">
+              <div class="text-container" style="align-items: start;">
+                <label for="houseNumber" class="inputAddressText">Número:</label>
+                <input type="number" placeholder="Ex: 1268" id="houseNumberInput" name="houseNumber" class="inputAddressForm">
+              </div>
+              <div class="text-container" style="align-items: start;">
+                <label for="neighborhood" class="inputAddressText">Bairro:</label>
+                <input type="number" placeholder="Ex: Centro" id="neighborhoodInput" name="neighborhood" class="inputAddressForm">
+              </div>
+            </div>
+            <div class="inputsContainer">
+              <div class="text-container" style="align-items: start;">
+                <label for="stateText" class="inputAddressText">Estado:</label>
+                <input type="text" placeholder="Ex: São Paulo" id="stateTextInput" name="stateText" class="inputAddressForm">
+              </div>
+              <div class="text-container" style="align-items: start;">
+                <label for="cityText" class="inputAddressText">Cidade:</label>
+                <input type="number" placeholder="Ex: Guarulhos" id="cityTextInput" name="cityText" class="inputAddressForm">
               </div>
             </div>
           </div>
-          <div class="modal-body content-text" style="border: none">
-            <h3 class="modal-title">Cadastro confirmado!</h3>
-            <div class="text-container">
-              <p>Tudo pronto! Escolha o curso desejado</p>
-              <p>e comece a estudar agora mesmo. 🚀📚</p>
-            </div>
-          </div>
           <div class="modal-footer button-div" style="border: none">
-            <button type="button" class="confirm-button" data-dismiss="modal">
-              Escolher um curso
+            <button type="button" class="confirm-button" style="background-color: #772583;" data-dismiss="modal">
+              Emitir Certificado
             </button>
           </div>
         </div>
@@ -147,5 +180,3 @@
 </body>
 
 </html>
-
-<!-- commit teste -->
